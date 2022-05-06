@@ -1,0 +1,182 @@
+* {
+    font-family: 'Akshar', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+body {
+    background: #F8F0E3;
+}
+.pageContainer {
+    width: 100%;
+}
+
+/*-------------------- MOBILE --------------------*/
+/* TITLE AND LOGO */
+header {
+    width: 100%;
+}
+.logoContainer {
+    display: flex;
+    align-items: baseline;
+}
+.logo {
+    background-image: url(pics/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    margin: 5px 5px 0px 5px;
+}
+header a {
+    color: #FB8500;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+nav a {
+    display: flex;
+    background: #219EBC;
+    margin: 0px 0px 10px 0px;
+    height: 50px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background: #FFB703;
+    margin: 0px 0px 10px 0px;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background: #FB8500;
+    width: 90%;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0px 0px 10px 0px;
+}
+p {
+    margin: 5px 20px 20px 20px;
+    color: #023047;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* BLOG POSTS */
+.blogPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blogPost h2 {
+    font-size: 25px;
+}
+.blogPost p {
+    text-align: left;
+}
+
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    color: #023047;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 90%;
+    margin: 0px 0px 10px 0px;
+}
+form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    background: #FB8500;
+    border-radius: 25px 0 25px 0;
+}
+form input, textarea {
+    border: none;
+    color: #023047;
+    background: #FFFFFF;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+form textarea {
+    height: 200px;
+}
+form button {
+    width: 100%;
+    border: none;
+    background: #FB8500;
+    font-size: 40px;
+}
+
+/* SHOP */
+.selectWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+.selectWrapper label {
+    color: #023047;
+    font-size: 25px;
+}
+.selectWrapper select {
+    color: #023047;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+}
+.partSearch h2 {
+    width: 100%;
+}
+
+/* SEARCH RESULTS */
+.results {
+ width: 90%;
+}
+.results label, select {
+    font-size: 15px;
+    color:#023047;
+    margin: 0 0 10px 0;
+}
+.results table {
+    width: 100%;
+    border: 2px solid #023047;
+}
+.results td {
+    text-align: center;
+    font-size: 25px;
+    color: #023047;
+    height: 50px;
+    border: 2px solid #023047;
+}
+.results td a {
+    color:#023047;
+    text-decoration: underline;
