@@ -12,91 +12,92 @@
 </head>
 
 <body>
-  <header>
-    <div class="logoContainer">
-      <div class="logo"></div>
-      <a href="index.html">ThePartsAdvisor.com</a>
-    </div>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="shop.html">Shop</a>
-  </nav>
-
-  <main>
-    <h1>SHOP</h1>
-
-    <p>*This is just an example of how this is going to work*</p>
-
-    <form class="partSearch">
-      <h2>Select your vehicle:</h2>
-      <div class="selectWrapper">
-        <label for="carYear">Year:</label>
-        <select name="carYear">
-          <option value="2013">2010</option>
-        </select>
-
-        <label for="carMake">Make:</label>
-        <select name="carMake">
-          <option value="Honda">Honda</option>
-        </select>
-
-        <label for="carModel">Model:</label>
-        <select name="carModel">
-          <option value="Civic">Civic</option>
-        </select>
-
-        <label for="carSub">Submodel:</label>
-        <select name="carSub">
-          <option value="SI">SI</option>
-        </select>
+  <div class="pageContainer">
+    <header>
+      <div class="logoContainer">
+        <div class="logo"></div>
+        <a href="index.html">ThePartsAdvisor.com</a>
       </div>
+    </header>
 
-      <label for="partNameSearch"></label>
-      <input type="text" name="partNameSearch" placeholder="front brake pads...">
-      <button type="submit">Search</button>
-    </form>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="shop.html">Shop</a>
+    </nav>
 
-    <div class="results">
-      <label for="sortBy">Sort By:</label>
-      <select name="sortBy">
-        <option value="lowToHigh">Price Low to High</option>
-      </select>
+    <main>
+      <h1>SHOP</h1>
 
-      <table>
-        <tr>
-          <td id="firstResult"></td>
-          <td>Description</td>
-          <td>AutoZone</td>
-          <td>Buy</td>
-        </tr>
-      </table>
+      <p>*This is just an example of how this is going to work*</p>
 
-      <table>
-        <tr>
-          <td id="secondResult"></td>
-          <td>Description</td>
-          <td>AutoZone</td>
-          <td>Buy</td>
-        </tr>
-      </table>
+      <form class="partSearch">
+        <h2>Select your vehicle:</h2>
+        <div class="selectWrapper">
+          <label for="carYear">Year:</label>
+          <select name="carYear">
+            <option value="2013">2010</option>
+          </select>
 
-      <table>
-        <tr>
-          <td id="thirdResult"></td>
-          <td>Description</td>
-          <td>AutoZone</td>
-          <td><a href="">Buy</a></td>
-        </tr>
-      </table>
+          <label for="carMake">Make:</label>
+          <select name="carMake">
+            <option value="Honda">Honda</option>
+          </select>
 
-    </div>
-  </main>
-  <script src="script.js"></script>
+          <label for="carModel">Model:</label>
+          <select name="carModel">
+            <option value="Civic">Civic</option>
+          </select>
+
+          <label for="carSub">Submodel:</label>
+          <select name="carSub">
+            <option value="SI">SI</option>
+          </select>
+        </div>
+
+        <label for="partNameSearch"></label>
+        <input type="text" name="partNameSearch" placeholder="front brake pads...">
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="results">
+        <label for="sortBy">Sort By:</label>
+        <select name="sortBy">
+          <option value="lowToHigh">Price Low to High</option>
+        </select>
+
+        <table>
+          <tr>
+            <td id="firstResult"></td>
+            <td>Description</td>
+            <td>AutoZone</td>
+            <td>Buy</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td id="secondResult"></td>
+            <td>Description</td>
+            <td>AutoZone</td>
+            <td>Buy</td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td id="thirdResult"></td>
+            <td>Description</td>
+            <td>AutoZone</td>
+            <td><a href="">Buy</a></td>
+          </tr>
+        </table>
+
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>
