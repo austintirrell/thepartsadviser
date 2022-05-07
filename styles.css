@@ -158,6 +158,16 @@ footer p {
 .blogPost p {
     text-align: left;
 }
+.blogPost a {
+    color: #023047;
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+.blogPost a:hover {
+    background: #023047;
+    color: #F8F0E3;
+    text-decoration: none;
+}
 
 /* CONTACT FORM */
 form {
@@ -166,7 +176,6 @@ form {
     color: #023047;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
     width: 90%;
     max-width: 600px;
     margin: 0px 0px 10px 0px;
@@ -199,14 +208,25 @@ form button {
 
 /* SHOP */
 .partSearch {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 .searchBar {
+    display: flex;
     margin: 0 0 10px 0;
-}
-.searchBar input, label, button {
     width: 100%;
+}
+.searchBar input {
+    width: 100%;
+    border-radius: 25px;
+    margin: 0 5px 0 0 ;
+}
+.searchBar button {
+    font-size: 25px;
+    width: 100px;
+    border-radius: 25px;
+    margin: 0 5px 0 5px;
 }
 .selectWrapper {
     display: flex;
@@ -215,28 +235,45 @@ form button {
     width: 100%;
     margin: 0 0 10px 0;
 }
-.selectWrapper label {
-    color: #023047;
+.selectOptionWrapper {
+    width: 100%;
+    margin: 0 5px 0 5px;
+}
+.selectOptionWrapper label {
+    background: #023047;
+    color: #FFFFFF;
     font-size: 25px;
     width: 100%;
 }
-.selectWrapper select {
+.selectOptionWrapper select {
     color: #023047;
     width: 100%;
     font-size: 25px;
     text-align: center;
     border: none;
 }
-.partSearch h2 {
-    width: 100%;
-}
 
 /* SEARCH RESULTS */
+.searchAndSort {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
 .sortBy {
     float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 5px;
 }
 .sortBy select {
-    border: none
+    border: none;
+}
+.sortBy label {
+    background: none;
+    color: #023047;
+    font-size: 15px;
 }
 .results {
  width: 100%;
