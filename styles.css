@@ -98,6 +98,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 0 25px 0;
 }
 h1 {
     width: 100%;
@@ -124,6 +125,24 @@ p, dd {
     color: #023047;
     font-size: 25px;
     text-align: center;
+}
+footer {
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #023047;
+    width: 100%;
+    height: 20px;
+}
+footer p {
+    position: relative;
+    top: 5px;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 5px 0 0 0;
+    align-self: center;
 }
 
 /* BLOG POSTS */
@@ -179,6 +198,16 @@ form button {
 }
 
 /* SHOP */
+.partSearch {
+    display: flex;
+    flex-direction: column;
+}
+.searchBar {
+    margin: 0 0 10px 0;
+}
+.searchBar input, label, button {
+    width: 100%;
+}
 .selectWrapper {
     display: flex;
     flex-direction: column;
@@ -201,11 +230,14 @@ form button {
 .partSearch h2 {
     width: 100%;
 }
-.selectOptionWrapper {
-    width: 100%;
-}
 
 /* SEARCH RESULTS */
+.sortBy {
+    float: right;
+}
+.sortBy select {
+    border: none
+}
 .results {
  width: 100%;
 }
@@ -229,6 +261,7 @@ form button {
     font-size: 25px;
     color: #023047;
     height: 50px;
+    width: 75px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
