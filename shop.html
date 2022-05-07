@@ -28,10 +28,12 @@
       <a href="shop.html">Shop</a>
     </nav>
 
-    <div class="mainImage" id="shopImage"></div>
+    <div class="mainImage" id="shopImage" title="Man Driving Image"></div>
 
     <main>
       <p>*This is just an example of how this is going to work*</p>
+
+      <!-- CAR AND PARTS SELECTOR -->
 
       <form class="partSearch">
         <h2>Select your vehicle:</h2>
@@ -40,7 +42,7 @@
           <div class="selectorOptionWrapper">
             <label for="carYear">Year:</label>
             <select name="carYear">
-              <option value="2013">2010</option>
+              <option value="2013">2013</option>
             </select>
           </div>
 
@@ -64,12 +66,21 @@
               <option value="SI">SI</option>
             </select>
           </div>
+
+          <div class="selectorOptionWrapper">
+            <label for="carEngine">Engine:</label>
+            <select name="carEngine">
+              <option value="2.4L">2.4L</option>
+            </select>
+          </div>
         </div>
 
         <label for="partNameSearch"></label>
         <input type="text" name="partNameSearch" placeholder="front brake pads...">
         <button type="submit">Search</button>
       </form>
+
+      <!-- SEARCH RESULTS -->
 
       <div class="results">
         <label for="sortBy">Sort By:</label>
@@ -78,32 +89,39 @@
         </select>
 
         <table>
+          <tr class="tableHeader">
+            <th>Image</th>
+            <th>Retailer</th>
+            <th>Brand</th>
+            <th>Tier</th>
+            <th>Price</th>
+            <th>Link</th>
+          </tr>
           <tr>
-            <td id="firstResult"></td>
-            <td>Description</td>
+            <td id="result1"></td>
             <td>AutoZone</td>
-            <td>Buy</td>
+            <td>Duralast</td>
+            <td>Mid</td>
+            <td>$44.49</td>
+            <td><a href="https://www.autozone.com/brakes-and-traction-control/brake-pads/p/duralast-gold-ceramic-brake-pads-dg1653/198417_0_0" target="_blank">Buy</a></td>
+          </tr>
+          <tr>
+            <td id="result2"></td>
+            <td>Advance Auto</td>
+            <td>Carquest</td>
+            <td>Mid</td>
+            <td>$54.99</td>
+            <td><a href="https://shop.advanceautoparts.com/p/carquest-premium-gold-brk-pad-gold-ceramic-gnad914c/12452580-P?searchTerm=Front+Brake+Pads+%26+Shoes" target="_blank">Buy</a></td>
+          </tr>
+          <tr>
+            <td id="result3"></td>
+            <td>O'reilly</td>
+            <td>BrakeBest</td>
+            <td>Mid</td>
+            <td>$54.99</td>
+            <td><a href="https://www.oreillyauto.com/shop/b/brakes/brake-pads---shoes/brake-pads/a99314144bb6/v/a/125003/automotive-car-2013-honda-civic?q=brake+pads"  target="_blank">Buy</a></td>
           </tr>
         </table>
-
-        <table>
-          <tr>
-            <td id="secondResult"></td>
-            <td>Description</td>
-            <td>AutoZone</td>
-            <td>Buy</td>
-          </tr>
-        </table>
-
-        <table>
-          <tr>
-            <td id="thirdResult"></td>
-            <td>Description</td>
-            <td>AutoZone</td>
-            <td><a href="">Buy</a></td>
-          </tr>
-        </table>
-
       </div>
     </main>
   </div>
