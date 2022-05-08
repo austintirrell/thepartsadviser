@@ -205,6 +205,21 @@ form button {
     background: #FB8500;
     font-size: 40px;
 }
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #FFB703;
+    color: #023047;
+}
+.subscribe input {
+    width: 25px;
+    height: 25px;
+}
+.subscribe label {
+    background: #FFB703;
+    color: #023047;
+}
 
 /* SHOP */
 .partSearch {
