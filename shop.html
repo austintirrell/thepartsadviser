@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -36,55 +36,56 @@
         <div class="selectWrapper">
           <div class="selectOptionWrapper">
             <label for="carYear">Year:</label>
-            <select name="carYear">
+            <select name="carYear" id="carYear">
               <option value="2013">2013</option>
             </select>
           </div>
 
           <div class="selectOptionWrapper">
             <label for="carMake">Make:</label>
-            <select name="carMake">
+            <select name="carMake" id="carMake">
               <option value="Honda">Honda</option>
             </select>
           </div>
 
           <div class="selectOptionWrapper">
             <label for="carModel">Model:</label>
-            <select name="carModel">
+            <select name="carModel" id="carModel">
               <option value="Civic">Civic</option>
             </select>
           </div>
 
           <div class="selectOptionWrapper">
             <label for="carSub">Submodel:</label>
-            <select name="carSub">
+            <select name="carSub" id="carSub">
               <option value="SI">SI</option>
             </select>
           </div>
 
           <div class="selectOptionWrapper">
             <label for="carEngine">Engine:</label>
-            <select name="carEngine">
+            <select name="carEngine" id="carEngine">
               <option value="2.4L">2.4L</option>
             </select>
           </div>
         </div>
 
-      <!-- SEARCH RESULTS -->
+        <!-- SEARCH RESULTS -->
 
-      <div class="searchAndSort">
-        <div class="searchBar">
-          <input type="text" name="partNameSearch" value="front brake pads">
-          <button type="submit">Search</button>
-        </div>
+        <div class="searchAndSort">
+          <div class="searchBar">
+            <input type="text" name="partNameSearch" value="front brake pads">
+            <button type="submit">Search</button>
+          </div>
 
-        <div class="sortBy">
-          <label for="sortBy">Sort By:</label>
-          <select name="sortBy">
-            <option value="lowToHigh">Price Low to High</option>
-          </select>
+          <div class="sortBy">
+            <label for="sortBy">Sort By:</label>
+            <select name="sortBy" id="sortBy">
+              <option value="lowToHigh">Price Low to High</option>
+            </select>
+          </div>
         </div>
-      </div>
+      </form>
 
       <div class="results">
         <table>
