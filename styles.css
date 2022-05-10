@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     font-family: 'Akshar', sans-serif;
     padding: 0;
     margin: 0;
@@ -10,70 +11,80 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #F8F0E3;
-    width: 100%;
-}
-.pageContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: #FFFFFF;
     width: 100%;
 }
 
-/*-------------------- MOBILE --------------------*/
 /* TITLE AND LOGO */
-header {
-    width: 100%;
-}
 .logoContainer {
+    position: relative;
     display: flex;
-    align-items: baseline;
+    justify-content: baseline;
+    align-items: flex-end;
 }
-.logo {
+.logoSymbol {
     background-image: url(pics/logo.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    margin: 10px 5px 0px 5px;
+    width: 2em;
+    height: 2em;
+    margin: .5rem;
 }
-header a {
+.nameContainer {
     color: #FB8500;
-    font-size: xx-large;
-    font-weight: bold;
+    font-size: 2rem;
 }
 
 /* NAVBAR */
 nav {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-nav a {
+.navLinks {
     display: flex;
-    background: #219EBC;
-    margin: 0px 0px 10px 0px;
-    width: 100%;
-    height: 50px;
-    font-size: 25px;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
 }
-nav a:hover, a:active {
+.navLinks ul {
+    display: flex;
+}
+.navLinks li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.navLinks li:hover {
+    background: #d4d4d4;
+}
+.navLinks li a {
+    padding: 1rem ;
+    text-decoration: none;
+    display: block;
+    color: #023047;
+}
+.toggleButton {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2rem;
+    width: 2rem;
+}
+.toggleButton .bar {
     background: #023047;
+    width: 100%;
+    height: .25rem;
+    border-radius: 10px;
 }
 /* Pics */
 .mainImage {
     width: 100%;
-    height: 200px;
+    height: 15rem;
+    margin-bottom: 10px;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0px 0px 10px 0px;
 }
 #homeImage {
     background-image: url(pics/homeimg.jpg);
@@ -93,7 +104,7 @@ nav a:hover, a:active {
 
 /* MAIN */
 main {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,12 +120,13 @@ h1 {
     margin: 0px 0px 10px 0px;
 }
 h2, dt {
+    color: #FFFFFF;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    background: #FB8500;
+    background: #4b8fb1;
     width: 100%;
     height: 50px;
     max-height: 100px;
@@ -125,6 +137,15 @@ p, dd {
     color: #023047;
     font-size: 25px;
     text-align: center;
+}
+.divider {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.divider section {
+    width: 27.5rem;
+    margin: 0 .5rem 0 .5rem;
 }
 footer {
     position:fixed;
@@ -147,6 +168,7 @@ footer p {
 
 /* BLOG POSTS */
 .blogPost {
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,46 +200,49 @@ form {
     align-items: center;
     width: 90%;
     max-width: 600px;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 form label {
+    color: #023047;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 25px;
-    background: #FB8500;
 }
 form input, textarea {
     border: none;
     color: #023047;
-    background: #FFFFFF;
+    background: #e9e9e9;
     width: 100%;
     font-size: 25px;
     text-align: center;
+    border-radius: 25px;
 }
 form textarea {
     height: 200px;
+    resize: none;
 }
 form button {
-    width: 100%;
+    width: 50%;
     border: none;
     background: #FB8500;
-    font-size: 40px;
+    font-size: 30px;
+    border-radius: 25px;
 }
 .subscribe {
+    justify-content: space-evenly;
     display: flex;
-    flex-direction: row;
     width: 100%;
-    background: #FFB703;
     color: #023047;
+    margin: 10px;
 }
 .subscribe input {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
 .subscribe label {
-    background: #FFB703;
+    width: 15rem;
     color: #023047;
 }
 
@@ -321,24 +346,45 @@ form button {
     color:#023047;
     text-decoration: underline;
 }
-#result1 {
-    background-image: url(pics/autozoneresult.png);
-}
-#result2 {
-    background-image: url(pics/advanceresult.png);
-}
-#result3 {
-    background-image: url(pics/oreillyresult.png);
-}
-/*-------------------- TABLET / DESKTOP --------------------*/
-@media only screen and (min-width: 600px) {
-    .pageContainer {
-        width: 80%;
+
+/*-------------------- Mobile --------------------*/
+@media (max-width:625px) {
+    .blogPost {
+        width: 100%;
+    }
+    .divider {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .divider section {
+        width: 100%;
+    }
+    .toggleButton {
+        display: flex;
     }
     nav {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
     }
-    .selectWrapper {
-        flex-direction: row;
+    .navLinks {
+        display: none;
+        width: 100%;
+    }
+    .navLinks ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navLinks ul li a{
+        text-align: center;
+        width: 100%;
+        height: 2rem;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    .navLinks.active {
+        display: flex;
     }
 }

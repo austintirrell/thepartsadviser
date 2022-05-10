@@ -12,47 +12,54 @@
 </head>
 
 <body>
-  <div class="pageContainer">
-    <header>
+  <nav>
+    <a href="index.html">
       <div class="logoContainer">
-        <div class="logo"></div>
-        <a href="index.html">ThePartsAdviser.com</a>
+        <div class="logoSymbol"></div>
+        <div class="nameContainer">ThePartsAdviser.com</div>
       </div>
-    </header>
+    </a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="shop.html">Shop</a>
-    </nav>
+    <a class="toggleButton">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
 
-    <div class="mainImage" id="contactImage" title="Car parts"></div>
+    <div class="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <main>
-      <form action="https://formsubmit.co/363707a58d51fc881182dd7fd8f575b9" method="POST">
-        <input type="hidden" name="_next" value="https://www.thepartsadviser.com/thankyou.html">
-        <input type="hidden" name="_captcha" value="false">
+  <div class="mainImage" id="contactImage"></div>
 
-        <label for="contactName">Name</label>
-        <input type="text" name="contactName" id="contactName" required>
+  <main>
+    <form action="https://formsubmit.co/363707a58d51fc881182dd7fd8f575b9" method="POST">
+      <input type="hidden" name="_next" value="https://www.thepartsadviser.com/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
 
-        <label for="contactMail">Email</label>
-        <input type="email" name="contactMail" id="contactMail" required>
+      <label for="contactName">Name</label>
+      <input type="text" name="contactName" id="contactName" required>
 
-        <label for="contactMessage">Message</label>
-        <textarea name="contactMessage" id="contactMessage" required></textarea>
+      <label for="contactMail">Email</label>
+      <input type="email" name="contactMail" id="contactMail" required>
 
-        <div class="subscribe">
-          <label for="subscribeBox">Subscribe to updates?</label>
-          <input type="checkbox" name="subscribeBox" id="subscribeBox">
-        </div>
+      <label for="contactMessage">Message</label>
+      <textarea name="contactMessage" id="contactMessage" required></textarea>
 
-        <button type="submit">Submit</button>
-      </form>
-    </main>
-  </div>
+      <div class="subscribe">
+        <label for="subscribeBox">Subscribe to updates?</label>
+        <input type="checkbox" name="subscribeBox" id="subscribeBox">
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
 
   <footer>
     <p>Copyright © 2022 ThePartsAdviser.com</p>
