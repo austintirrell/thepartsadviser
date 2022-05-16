@@ -202,6 +202,7 @@ form textarea {
     resize: none;
 }
 form button {
+    color: #FFFFFF;
     width: 50%;
     border: none;
     background: #FB8500;
@@ -265,5 +266,13 @@ form button {
     main {
         width: 100%;
         box-shadow: none;
+    }
+}
+@media (min-width:900px) {
+    body {
+        height: 100vh;
+    }
+    main {
+        height: 100%;
     }
 }
