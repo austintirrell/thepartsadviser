@@ -1,9 +1,6 @@
-const toggleButton = document.getElementsByClassName('toggleButton')[0];
-const navLinks = document.getElementsByClassName('navLinks')[0];
+const toggleBtn = document.getElementById('toggleBtn')
+const navLinks = document.getElementById('navLinks')
 
-toggleButton.addEventListener('click', () => {
+toggleBtn.addEventListener('click', function() {
     navLinks.classList.toggle('active')
-});
-toggleButton.addEventListener('touchstart', () => {
-    navLinks.classList.toggle('active')
-});
+})
