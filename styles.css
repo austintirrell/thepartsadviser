@@ -7,6 +7,7 @@
     color: #023047;
     border: none;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -24,6 +25,7 @@ body {
     justify-content: baseline;
     align-items: flex-end;
 }
+
 .logoSymbol {
     background-image: url(pics/logo.png);
     background-size: 100%;
@@ -32,9 +34,147 @@ body {
     height: 2em;
     margin: .5rem;
 }
+
 .nameContainer {
     color: #FB8500;
     font-size: 2rem;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#navLinks {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navLinks a {
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#navLinks a:hover {
+    background: #e9e9e9;
+}
+
+#navLinks.active {
+    display: flex;
+}
+
+#toggleBtn {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 3rem;
+    width: 3rem;
+    padding: 10px;
+}
+
+#toggleBtn:hover {
+    background: #e9e9e9;
+    border-radius: 25px;
+}
+
+.bar {
+    background: #000000;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+#loginBtn {
+    background: none;
+    position: absolute;
+    right: 3rem;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    padding: 10px;
+}
+#loginBtn:hover {
+    background: #e9e9e9;
+    border-radius: 50px;
+}
+#loginIcon {
+    width: 30px;
+    height: 30px;
+    background-image: url(pics/loginIcon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#carBtn {
+    background: none;
+    position: absolute;
+    right: 6rem;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    padding: 10px;
+}
+#carBtn:hover {
+    background: #e9e9e9;
+    border-radius: 50px;
+}
+#carIcon {
+    width: 30px;
+    height: 30px;
+    background-image: url(pics/carIcon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* SEARCH BAR */
+#searchBar {
+    background: #e9e9e9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBar form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#searchButton {
+    background: #FFFFFF;
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    background-image: url(pics/searchIcon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: .2;
+}
+
+#search {
+    background: #FFFFFF;
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    border: 3px solid #e9e9e9;
+    border-radius: 25px;
+    padding: 0 50px 0 25px;
+    text-align: left;
 }
 
 /* MAIN */
@@ -47,6 +187,7 @@ main {
     box-shadow: 0 0 20px #000000;
     padding: 0 0 25px 0;
 }
+
 section {
     width: 80%;
     display: flex;
@@ -55,11 +196,13 @@ section {
     align-items: center;
     margin: 0 20px 10px 20px;
 }
+
 section p {
     background: #e9e9e9;
     border-radius: 25px;
     padding: 20px 40px 20px 40px;
 }
+
 h1 {
     width: 100%;
     display: flex;
@@ -68,6 +211,7 @@ h1 {
     background: #FFB703;
     margin: 0px 0px 10px 0px;
 }
+
 h2 {
     text-align: center;
     display: flex;
@@ -77,12 +221,14 @@ h2 {
     width: 50%;
     height: 50px;
     max-height: 100px;
-    white-space: nowrap ;
+    white-space: nowrap;
 }
+
 p {
     color: #023047;
     font-size: 25px;
 }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -93,54 +239,10 @@ footer {
     height: 20px;
     z-index: 1;
 }
+
 footer p {
     color: #FFFFFF;
     font-size: 15px;
-}
-
-/* NAVBAR */
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#navLinks, #navLinks ul {
-    display: flex;
-}
-#navLinks li {
-    list-style: none;
-    font-size: 1.5rem;
-}
-#navLinks li:hover {
-    background: #e9e9e9;
-}
-#navLinks li a {
-    padding: 1rem ;
-    text-decoration: none;
-    display: block;
-    color: #023047;
-}
-#toggleBtn {
-    background: none;
-    position: absolute;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 3rem;
-    width: 3rem;
-    padding: 10px;
-}
-#toggleBtn:hover {
-    background: #e9e9e9;
-    border-radius: 10px;
-}
-#toggleBtn .bar {
-    background: #023047;
-    width: 100%;
-    height: .25rem;
-    border-radius: 10px;
 }
 
 /* Pics */
@@ -153,18 +255,23 @@ nav {
     background-repeat: no-repeat;
     z-index: 1;
 }
+
 #homeImage {
     background-image: url(pics/homeimg.jpg);
 }
+
 #blogImage {
     background-image: url(pics/blogimg.jpg);
 }
+
 #aboutImage {
     background-image: url(pics/aboutimg.jpg);
 }
+
 #contactImage {
     background-image: url(pics/conctactimg.jpg);
 }
+
 #shopImage {
     background-image: url(pics/shopimg.jpg);
 }
@@ -180,6 +287,7 @@ form {
     max-width: 600px;
     margin: 10px 0px 10px 0px;
 }
+
 form label {
     color: #023047;
     display: flex;
@@ -188,7 +296,9 @@ form label {
     width: 100%;
     font-size: 25px;
 }
-form input, textarea {
+
+form input,
+textarea {
     border: none;
     color: #023047;
     background: #e9e9e9;
@@ -197,10 +307,12 @@ form input, textarea {
     text-align: center;
     border-radius: 25px;
 }
+
 form textarea {
     height: 200px;
     resize: none;
 }
+
 form button {
     color: #FFFFFF;
     width: 50%;
@@ -209,6 +321,7 @@ form button {
     font-size: 30px;
     border-radius: 25px;
 }
+
 .subscribe {
     justify-content: space-evenly;
     display: flex;
@@ -216,10 +329,12 @@ form button {
     color: #023047;
     margin: 10px;
 }
+
 .subscribe input {
     width: 40px;
     height: 40px;
 }
+
 .subscribe label {
     width: 15rem;
     color: #023047;
@@ -230,35 +345,21 @@ form button {
         width: 100%;
         box-shadow: none;
     }
+
     section {
         width: 90%;
     }
-    #toggleBtn {
-        display: flex;
-    }
+
     nav {
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: left;
         width: 100%;
     }
+
     #navLinks {
         display: none;
         width: 100%;
-    }
-    #navLinks ul{
-        flex-direction: column;
-        width: 100%;
-    }
-    #navLinks ul li a {
-        text-align: center;
-        width: 100%;
-        height: 2rem;
-        font-size: 1.5rem;
-        margin: 0;
-        padding: 0;
-    }
-    #navLinks.active {
-        display: flex;
     }
 }
 
@@ -267,11 +368,17 @@ form button {
         width: 100%;
         box-shadow: none;
     }
+
+    nav {
+        flex-direction: column;
+    }
 }
+
 @media (min-width:900px) {
     body {
         height: 100vh;
     }
+
     main {
         height: 100%;
     }
