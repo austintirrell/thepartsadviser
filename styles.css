@@ -19,7 +19,7 @@ body {
 }
 
 /* TITLE AND LOGO */
-.logoContainer {
+.logoContainer, .logoContainer a {
     position: relative;
     display: flex;
     justify-content: baseline;
