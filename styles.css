@@ -107,14 +107,19 @@ nav {
     width: 3rem;
     height: 3rem;
     padding: 10px;
-    background-image: url(pics/loginIcon.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 #loginBtn:hover {
     background: #e9e9e9;
     border-radius: 50px;
+}
+
+#loginIcon {
+    width: 10px;
+    height: 10px;
+    background-image: url(pics/loginIcon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #carBtn {
@@ -125,13 +130,18 @@ nav {
     width: 3rem;
     height: 3rem;
     padding: 10px;
-    background-image: url(pics/carIcon.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 #carBtn:hover {
     background: #e9e9e9;
     border-radius: 50px;
+}
+
+#carIcon {
+    width: 10px;
+    height: 10px;
+    background-image: url(pics/carIcon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /* SEARCH BAR */
